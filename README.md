@@ -55,11 +55,11 @@ Para instalar o `Franz` no `Linux Ubuntu` usando o `Terminal Emulator`, você po
 
 Ou, se preferir, pode encontrar o `Franz` no menu de aplicativos do seu sistema e executá-lo a partir de lá.
 
-## 1.1 Código completo para configurar/instalar/usar
+### 1.1 Código completo para configurar/instalar/usar
 
-Para configurar/instalar/usar o `inkscape` no `Linux Ubuntu` sem precisar digitar linha por linha, você pode seguir estas etapas:
+Para configurar/instalar/usar o `franz` no `Linux Ubuntu` sem precisar digitar linha por linha, você pode seguir estas etapas:
 
-1. Abra o `Terminal Emulator. Você pode fazer isso pressionando: `Ctrl + Alt + T`
+1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`
 
 2. Digite o seguinte comando e pressione `Enter`:
 
@@ -77,6 +77,36 @@ Para configurar/instalar/usar o `inkscape` no `Linux Ubuntu` sem precisar digita
     sudo apt-get install -f
     franz
     ```
+
+### 3. Desinstalar o `franz` no `Linux Ubuntu`
+
+Para desinstalar o `Franz` no `Linux Ubuntu` usando o `Terminal Emulator`, siga os passos abaixo:
+
+1. **Passo único**: Desinstalar com `apt`. Execute o seguinte comando:
+
+    ```bash
+    sudo apt remove franz -y
+    ```
+
+2. Se quiser também remover arquivos de configuração (mais "limpeza"):
+
+    ```bash
+    sudo apt purge franz -y
+    ```
+
+3. **(Opcional) Limpar pacotes órfãos**: Depois de remover, você pode limpar pacotes não utilizados com:
+
+    ```bash
+    sudo apt autoremove
+    ```
+
+4. **(Opcional) Remover o arquivo `.deb` baixado**: Se você ainda tiver o arquivo `.deb` (`franz_5.9.2_amd64.deb`), pode removê-lo:
+
+    ```bash
+    rm franz_5.9.2_amd64.deb
+    ```
+
+Pronto! O `Franz` estará completamente removido do seu sistema. Se ele tiver sido instalado de outra forma (ex: `AppImage` ou `snap`), posso te mostrar como remover também – é só me avisar.
 
 ## Referências
 
